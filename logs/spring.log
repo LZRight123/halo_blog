@@ -3870,3 +3870,49 @@ Caused by: java.lang.StackOverflowError: null
 2021-02-21 18:09:22.680  INFO 7 --- [main] run.halo.app.listener.StartedListener    : [94mHalo started at         http://112.124.109.241[0;39m
 2021-02-21 18:09:22.680  INFO 7 --- [main] run.halo.app.listener.StartedListener    : [94mHalo admin started at   http://112.124.109.241/admin[0;39m
 2021-02-21 18:09:22.680  INFO 7 --- [main] run.halo.app.listener.StartedListener    : [93mHalo has started successfully![0;39m
+2021-02-21 18:33:24.519  INFO 8 --- [main] run.halo.app.Application                 : Starting Application v1.4.5 using Java 11.0.10 on 185a57b28ff3 with PID 8 (/application/BOOT-INF/classes started by root in /application)
+2021-02-21 18:33:24.524  INFO 8 --- [main] run.halo.app.Application                 : No active profile set, falling back to default profiles: default
+2021-02-21 18:33:25.699  INFO 8 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-21 18:33:25.840  INFO 8 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 22 JPA repository interfaces.
+2021-02-21 18:33:26.924  INFO 8 --- [main] org.eclipse.jetty.util.log               : Logging initialized @3838ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-02-21 18:33:27.208  INFO 8 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8090
+2021-02-21 18:33:27.218  INFO 8 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+9
+2021-02-21 18:33:27.257  INFO 8 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2021-02-21 18:33:27.259  INFO 8 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2654 ms
+2021-02-21 18:33:27.567  INFO 8 --- [main] run.halo.app.config.HaloConfiguration    : Halo cache store load impl : [class run.halo.app.cache.InMemoryCacheStore]
+2021-02-21 18:33:27.863  INFO 8 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-21 18:33:27.940  INFO 8 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-21 18:33:28.153  INFO 8 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-21 18:33:28.304  INFO 8 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-21 18:33:28.578  INFO 8 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-21 18:33:28.638  INFO 8 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-21 18:33:30.103  INFO 8 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-21 18:33:30.117  INFO 8 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-21 18:33:31.031  INFO 8 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2021-02-21 18:33:31.033  INFO 8 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2021-02-21 18:33:31.036  INFO 8 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 660000ms
+2021-02-21 18:33:31.051  INFO 8 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@22495f2f{application,/,[file:///tmp/jetty-docbase.8090.5204264232809926254/, jar:file:/application/BOOT-INF/lib/springfox-swagger-ui-3.0.0.jar!/META-INF/resources],AVAILABLE}
+2021-02-21 18:33:31.053  INFO 8 --- [main] org.eclipse.jetty.server.Server          : Started @7968ms
+2021-02-21 18:33:32.796  INFO 8 --- [main] run.halo.app.handler.file.FileHandlers   : Registered 9 file handler(s)
+2021-02-21 18:33:33.812  INFO 8 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 18:33:34.364  INFO 8 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-02-21 18:33:34.390  INFO 8 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/api/admin/actuator'
+2021-02-21 18:33:34.453  INFO 8 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-21 18:33:34.455  INFO 8 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-21 18:33:34.457  INFO 8 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-21 18:33:34.476  INFO 8 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@3fb450d7{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2021-02-21 18:33:34.478  INFO 8 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8090 (http/1.1) with context path '/'
+2021-02-21 18:33:34.500  INFO 8 --- [main] run.halo.app.Application                 : Started Application in 10.808 seconds (JVM running for 11.414)
+2021-02-21 18:33:34.502  INFO 8 --- [main] run.halo.app.listener.StartedListener    : Starting migrate database...
+2021-02-21 18:33:34.579  INFO 8 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.5.1 by Redgate
+2021-02-21 18:33:34.593  INFO 8 --- [main] o.f.c.i.database.base.DatabaseType       : Database: jdbc:h2:file:~/.halo/db/halo (H2 1.4)
+2021-02-21 18:33:34.634  INFO 8 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Repair of failed migration in Schema History table "PUBLIC"."flyway_schema_history" not necessary. No failed migration detected.
+2021-02-21 18:33:34.652  INFO 8 --- [main] o.f.core.internal.command.DbRepair       : Successfully repaired schema history table "PUBLIC"."flyway_schema_history" (execution time 00:00.032s).
+2021-02-21 18:33:34.656  INFO 8 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.5.1 by Redgate
+2021-02-21 18:33:34.669  INFO 8 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.007s)
+2021-02-21 18:33:34.685  INFO 8 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 4
+2021-02-21 18:33:34.689  INFO 8 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2021-02-21 18:33:34.692  INFO 8 --- [main] run.halo.app.listener.StartedListener    : Migrate database succeed.
+2021-02-21 18:33:34.803  INFO 8 --- [main] run.halo.app.listener.StartedListener    : [94mHalo started at         http://112.124.109.241[0;39m
+2021-02-21 18:33:34.805  INFO 8 --- [main] run.halo.app.listener.StartedListener    : [94mHalo admin started at   http://112.124.109.241/admin[0;39m
+2021-02-21 18:33:34.805  INFO 8 --- [main] run.halo.app.listener.StartedListener    : [93mHalo has started successfully![0;39m
